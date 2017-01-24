@@ -1,2 +1,5 @@
 // this command finds all HTML tags with a specific class in a source code of webPage and saves the entire line into a txt file
 curl https://www.abcd.com | grep titles > articleTitles.txt
+
+// finding out the name of the WI-FI connected to
+/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | sed -e "s/^  *SSID: //p" -e d
