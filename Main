@@ -3,3 +3,8 @@ curl https://www.abcd.com | grep titles > articleTitles.txt
 
 // finding out the name of the WI-FI connected to
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | sed -e "s/^  *SSID: //p" -e d
+
+
+// renaming files in a directory in sequential order
+ls | cat -n | while read n f; do mv "$f" "$n.<extension>"; done
+source: http://stackoverflow.com/questions/3211595/renaming-files-in-a-folder-to-sequential-numbers
