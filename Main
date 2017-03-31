@@ -8,3 +8,7 @@ curl https://www.abcd.com | grep titles > articleTitles.txt
 // renaming files in a directory in sequential order
 ls | cat -n | while read n f; do mv "$f" "$n.<extension>"; done
 source: http://stackoverflow.com/questions/3211595/renaming-files-in-a-folder-to-sequential-numbers
+
+// playing a sound on terminal (say you want a done beep after a long task has completed)
+afplay /System/Library/Sounds/Ping.aiff 
+(More system sounds in the above directory)
