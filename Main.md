@@ -1,4 +1,4 @@
-Find all HTML tags with a specific class in a source code of webPage and saves the entire line into a txt file
+Finding all HTML tags with a specific class in a source code of webPage and saving the entire line into a txt file
 ```
 curl https://www.abcd.com | grep titles > articleTitles.txt
 ```
