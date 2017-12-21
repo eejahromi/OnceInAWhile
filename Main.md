@@ -23,3 +23,10 @@ Playing a sound on terminal (say you want a done beep after a long task has comp
 afplay /System/Library/Sounds/Ping.aiff 
 ```
 NOTE: More system sounds in the above directory
+
+---
+
+Handy unix/git command to add only tracked files to the staging area
+```
+git status -uno | grep 'modified' | cut -c 14- | xargs git add
+```
