@@ -33,7 +33,7 @@ git status -uno | grep 'modified' | cut -c 14- | xargs git add
 
 ---
 
-Getting rid of new lines from a multi-line command in terminal
+Getting rid of new lines from a multi-line command in terminal and copying to back pasteboard
 ```
 pbpaste | tr -d '\n' | pbcopy
 ```
