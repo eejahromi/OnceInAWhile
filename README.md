@@ -28,7 +28,7 @@ NOTE: More system sounds in the above directory
 
 ---
 
-Implementation of ```git add -u``` command, to add only tracked files to the staging area
+Re-implementation of ```git add -u``` command, to add only tracked files to the staging area
 ```
 git status -uno | grep 'modified' | cut -c 14- | xargs git add
 ```
