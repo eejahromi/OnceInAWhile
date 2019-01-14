@@ -35,7 +35,7 @@ git status -uno | grep 'modified' | cut -c 14- | xargs git add
 
 ---
 
-Re-implementation of ```git add -u``` command, to add only tracked files to the staging area
+Deleting multiple git branches
 ```
 git branch -d `git branch --list 'feature/project1*'`
 ```
