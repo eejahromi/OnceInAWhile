@@ -35,6 +35,11 @@ git status -uno | grep 'modified' | cut -c 14- | xargs git add
 
 ---
 
+Re-implementation of ```git add -u``` command, to add only tracked files to the staging area
+```
+git branch -d `git branch --list 'feature/project1*'`
+```
+
 Getting rid of new lines from a multi-line command in terminal and copying to back pasteboard
 ```
 pbpaste | tr -d '\n' | pbcopy
